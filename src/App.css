@@ -1,0 +1,4 @@
+/* Fixed layout - no body padding needed */
+body {
+  overflow: hidden;
+}

@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Segoe UI', Helvetica Neue, Helvetica, Arial, sans-serif;
+  background-color: #D9DBD5;
+  color: #000000;
+  line-height: 1.5;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}

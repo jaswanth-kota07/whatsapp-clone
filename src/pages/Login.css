@@ -1,0 +1,94 @@
+/* Full page center - WhatsApp Style */
+.Login-container {
+    min-height: calc(100vh - 60px);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f0f2f5;
+    font-family: 'Segoe UI', Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 20px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+}
+
+/* Login box */
+.Login-container form {
+    background: #ffffff;
+    padding: 40px 35px;
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.Login-container h2 {
+    margin-bottom: 20px;
+    color: #075E54;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Inputs */
+.Login-container input[type="text"],
+.Login-container input[type="password"] {
+    padding: 14px 16px;
+    font-size: 15px;
+    border: 1px solid #d1d7db;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f0f2f5;
+    transition: all 0.2s ease;
+}
+
+.Login-container input[type="text"]:focus,
+.Login-container input[type="password"]:focus {
+    border-color: #25D366;
+    background-color: #ffffff;
+}
+
+/* Submit button */
+.Login-container input[type="submit"] {
+    padding: 14px;
+    font-size: 16px;
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s ease;
+    margin-top: 10px;
+}
+
+.Login-container input[type="submit"]:hover {
+    background: #20BA5A;
+}
+
+/* Signup link */
+.Login-container a {
+    margin-top: 15px;
+    text-decoration: none;
+    color: #075E54;
+    font-size: 14px;
+    text-align: center;
+}
+
+.Login-container a:hover {
+    text-decoration: underline;
+    color: #128C7E;
+}
+
+.error {
+    color: #dc3545;
+    font-size: 13px;
+    margin: 5px 0;
+    text-align: center;
+}

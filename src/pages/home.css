@@ -1,0 +1,46 @@
+/* Home.css - WhatsApp Style */
+
+.home-container {
+  display: flex;
+  height: calc(100vh - 60px);
+  width: 100vw;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  background-color: #fff;
+}
+
+/* Left side - Chat list (WhatsApp green header) */
+.chat-header {
+  width: 35%;
+  max-width: 500px;
+  min-width: 300px;
+  background-color: #ffffff;
+  border-right: 1px solid #d1d7db;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Right side - Chat messages (WhatsApp pattern background) */
+.chatbox {
+  flex: 1;
+  background-color: #E5DDD5;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0icGF0dGVybiIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIGZpbGw9InJnYmEoMCwwLDAsMC4wMykiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=');
+  padding: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .chat-header {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .chatbox {
+    display: none;
+  }
+}
+
