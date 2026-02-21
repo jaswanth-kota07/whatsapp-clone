@@ -5,7 +5,7 @@ let stompClient = null;
 
 function connectWebSocket(onConnected) {
     // Create SockJS instance pointing to your backend endpoint
-    const socket = new SockJS(import.meta.env.VITE_API_URL);
+    const socket = new SockJS(import.meta.env.VITE_WS_URL);
 
     // Create STOMP client over SockJS
     stompClient = new Client({
